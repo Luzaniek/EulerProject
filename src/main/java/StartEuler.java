@@ -11,5 +11,8 @@ public class StartEuler {
         Exercise001 e001 = new Exercise001();
         System.out.println("The answer: " +  e001.perform001(1000));
 
+        Exercise001 e002 = new Exercise001();
+        System.out.println("The answer: " +  e002.perform002(4000000));
+
     }
 }

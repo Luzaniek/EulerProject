@@ -32,11 +32,32 @@ public class Exercise001 {
             }
         }
         while (n2 < k);
-
-
         return summa;
     }
 
+    public long perform003(long k){
+
+        long h = k/2 + 1;
+long ii = 1;
+        for(long i = h; i > 1; i--){
+
+            if(k%i == 0) {
+                Calculus number = new Calculus();
+                boolean kk = number.checkPrimeBigNumber(i);
+                if (kk == true) {ii = i;
+                    break;
+
+                }
+            }
+        }
+
+       return ii;
+
+
+
+
+
+    }
 
 }
 

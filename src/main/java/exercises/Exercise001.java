@@ -35,31 +35,67 @@ public class Exercise001 {
         return summa;
     }
 
-    public long perform003(long k){
+    public long perform003(long k) {
 
-        long h = k/2 + 1;
-long ii = 1;
-        for(long i = h; i > 1; i--){
+        long h = k / 2 + 1;
+        long ii = 1;
+        for (long i = h; i > 1; i--) {
 
-            if(k%i == 0) {
+            if (k % i == 0) {
                 Calculus number = new Calculus();
                 boolean kk = number.checkPrimeBigNumber(i);
-                if (kk == true) {ii = i;
+                if (kk == true) {
+                    ii = i;
                     break;
-
                 }
             }
         }
-
-       return ii;
-
-
-
-
-
+        return ii;
     }
 
+
+    public void perform004() {
+        int i;
+        int j;
+        int l;
+        int product;
+        int maxNumberPalindrom = 0;
+        int ii = 0;
+        int jj = 0;
+        int maxPalindrom = 1;
+        for (i = 999; i > 99; i--) {
+            for (j = 999; j >99; j--) {
+                product = i * j;
+                String productString = Integer.toString(product);
+                System.out.println(productString);
+                l = productString.length();
+                Calculus kkk = new Calculus();
+                String turnedProductString = kkk.changingOrder(productString);
+                System.out.println(productString + " oraz " + turnedProductString);
+                if (productString.equals(turnedProductString)) {
+                    if (product > maxNumberPalindrom ){
+                        maxNumberPalindrom = product;
+                        ii = i;
+                        jj = j;
+                    }
+
+                }
+
+
+
+            }
+
+            System.out.println(ii + " x " + jj + " = " + maxNumberPalindrom);
+//                m++;
+//                System.out.println(m + " Product " + i + " times " + j +" = " + product);
+
+        }
+
+    }
 }
+
+
+
 
 
 

@@ -8,14 +8,14 @@ public class Calculus {
 
         boolean numberIsPrime = true;
         int m = (n / 2);
-     //   System.out.println("m równa się : " + m);
+        //   System.out.println("m równa się : " + m);
 
         for (int i = 2; i < (m + 1); i++) {
-           // System.out.println("Sprawdzamy " + i);
+            // System.out.println("Sprawdzamy " + i);
             if (n % i == 0) {
 
                 numberIsPrime = false;
-        //        System.out.println(n + " nie jest liczba pierwsza");
+                //        System.out.println(n + " nie jest liczba pierwsza");
                 break;
             }
         }
@@ -40,6 +40,17 @@ public class Calculus {
         return bigNumberIsPrime;
     }
 
+
+    public String changingOrder(String oldString) {
+        String newString = "";
+        int oldStringlenght = oldString.length();
+        int i;
+        for (i = 0; i < oldStringlenght; i++) {
+            String charOfString = Character.toString(oldString.charAt(i));
+            newString = charOfString + newString;
+        }
+        return newString;
+    }
 
 }
 

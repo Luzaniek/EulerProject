@@ -5,7 +5,6 @@ import exercises.FirstClass;
 public class StartEuler {
 
 
-
     public static void main(String[] args) {
         System.out.println("Ala ma kota");
 
@@ -20,10 +19,19 @@ public class StartEuler {
         //boolean ttt = ccc.checkPrimeNumber(2123);
         //System.out.println(ttt);
 
-        Exercise001 e003 = new Exercise001();
-        long veryBigNumber = 600851475143L;
-        System.out.println("The answer 003: " +  e003.perform003(veryBigNumber));
+//        Exercise001 e003 = new Exercise001();
+//        long veryBigNumber = 600851475143L;
+//        System.out.println("The answer 003: " + e003.perform003(veryBigNumber));
+
+
+     Exercise001 e004 = new Exercise001();
+        e004.perform004();
+
+//Calculus slowo = new Calculus();
+//        System.out.println(slowo.changingOrder("termos"));
 
 
     }
 }
+
+

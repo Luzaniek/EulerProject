@@ -1,7 +1,4 @@
-import exercises.Calculus;
-import exercises.Exercise001;
-import exercises.Exercise008;
-import exercises.FirstClass;
+import exercises.*;
 
 public class StartEuler {
 
@@ -32,9 +29,13 @@ public class StartEuler {
 //        System.out.println(slowo.changingOrder("termos"));
 
 
-        Exercise008 e008 = new Exercise008();
-        e008.exercise008();
+//        Exercise008 e008 = new Exercise008();
+//        e008.exercise008();
 
+        Exercise005 e006 = new Exercise005();
+
+        int theDifference = e006.perform006(100);
+        System.out.println(theDifference);
     }
 }
 

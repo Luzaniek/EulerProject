@@ -14,15 +14,33 @@ public class Exercise005 {
         }
 
         for (int j = 1; j < (numberDone + 1); j++) {
-            sumaSecond = sumaSecond + j*j;
+            sumaSecond = sumaSecond + j * j;
 
         }
 
-        System.out.println(sumaFirst*sumaFirst);
+        System.out.println(sumaFirst * sumaFirst);
         System.out.println(sumaSecond);
-        theDifference = sumaFirst*sumaFirst - sumaSecond;
+        theDifference = sumaFirst * sumaFirst - sumaSecond;
         return theDifference;
     }
 
+
+    public void perform006() {
+        int i = 0;
+        int nn = 1;
+        int j = 2;
+
+        while (nn<10001)
+         {
+            Calculus ccc = new Calculus();
+
+            if (ccc.isItPrimeNumber(j) == true) {
+                nn++;
+            }
+            j++;
+        }
+
+        System.out.println(nn + " to " + --j);
+    }
 
 }

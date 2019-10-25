@@ -32,10 +32,16 @@ public class StartEuler {
 //        Exercise008 e008 = new Exercise008();
 //        e008.exercise008();
 
+//        Exercise005 e006 = new Exercise005();
+//        int theDifference = e006.perform006(100);
+//        System.out.println(theDifference);
+//
+//    Calculus primeNumber = new Calculus();
+//        primeNumber.isItPrimeNumber(9);
+//
         Exercise005 e006 = new Exercise005();
+        e006.perform006();
 
-        int theDifference = e006.perform006(100);
-        System.out.println(theDifference);
     }
 }
 

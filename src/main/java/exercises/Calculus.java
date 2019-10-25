@@ -1,5 +1,7 @@
 package exercises;
 
+import static java.lang.Math.sqrt;
+
 public class Calculus {
     int n;
 
@@ -52,5 +54,34 @@ public class Calculus {
         return newString;
     }
 
+
+    public boolean isItPrimeNumber(int p) {
+        boolean nnn = true;
+
+        double pp = sqrt(p);
+        //System.out.println(pp);
+        int kk = (int) Math.ceil(pp)+1;
+        int dp;
+       // System.out.println("pierwiatsek zaokraglony w gore to: " + kk);
+        boolean primeValue = true;
+
+        for (int i = 2; i < kk; i++) {
+            dp = p % i;
+            if (dp == 0) {
+
+             //   System.out.println(p + " nie jest liczbą pierwszą. bo dzieli się przez: " + i);
+                primeValue = false;
+                break;
+            }
+
+        }
+        if (primeValue == true) {
+            System.out.println(p + " jest to liczba pierwsza");
+        }
+return primeValue;
+    }
 }
+
+
+
 

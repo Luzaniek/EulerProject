@@ -64,7 +64,7 @@ public class Exercise001 {
         int jj = 0;
         int maxPalindrom = 1;
         for (i = 999; i > 99; i--) {
-            for (j = 999; j >99; j--) {
+            for (j = 999; j > 99; j--) {
                 product = i * j;
                 String productString = Integer.toString(product);
                 System.out.println(productString);
@@ -73,24 +73,18 @@ public class Exercise001 {
                 String turnedProductString = kkk.changingOrder(productString);
                 System.out.println(productString + " oraz " + turnedProductString);
                 if (productString.equals(turnedProductString)) {
-                    if (product > maxNumberPalindrom ){
+                    if (product > maxNumberPalindrom) {
                         maxNumberPalindrom = product;
                         ii = i;
                         jj = j;
                     }
-
                 }
-
-
-
             }
 
             System.out.println(ii + " x " + jj + " = " + maxNumberPalindrom);
-//                m++;
-//                System.out.println(m + " Product " + i + " times " + j +" = " + product);
-
+//
         }
-
+        System.out.println(ii + " x " + jj + " = " + maxNumberPalindrom);
     }
 }
 

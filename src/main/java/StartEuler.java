@@ -1,5 +1,6 @@
 import exercises.Calculus;
 import exercises.Exercise001;
+import exercises.Exercise008;
 import exercises.FirstClass;
 
 public class StartEuler {
@@ -24,12 +25,15 @@ public class StartEuler {
 //        System.out.println("The answer 003: " + e003.perform003(veryBigNumber));
 
 
-     Exercise001 e004 = new Exercise001();
-        e004.perform004();
+//        Exercise001 e004 = new Exercise001();
+//        e004.perform004();
 
 //Calculus slowo = new Calculus();
 //        System.out.println(slowo.changingOrder("termos"));
 
+
+        Exercise008 e008 = new Exercise008();
+        e008.exercise008();
 
     }
 }

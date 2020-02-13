@@ -39,8 +39,24 @@ public class StartEuler {
 //    Calculus primeNumber = new Calculus();
 //        primeNumber.isItPrimeNumber(9);
 //
-        Exercise005 e006 = new Exercise005();
-        e006.perform006();
+//        Exercise005 e007 = new Exercise005();
+//        e007.perform007();
+
+
+//        Calculus mmm = new Calculus();
+//        mmm.isItReallyPrimeNumber(77177);
+
+        FirstClass fc = new FirstClass();
+        fc.metodaFC();
+
+
+        SecondClass sc = new SecondClass();
+        sc.metodaFC();
+        System.out.println("teraz");
+
+        sc = new FirstClass();
+        sc.metodaFC();
+
 
     }
 }

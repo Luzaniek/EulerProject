@@ -25,7 +25,7 @@ public class Exercise005 {
     }
 
 
-    public void perform006() {
+    public void perform007() {
         int i = 0;
         int nn = 1;
         int j = 2;
@@ -39,7 +39,6 @@ public class Exercise005 {
             }
             j++;
         }
-
         System.out.println(nn + " to " + --j);
     }
 

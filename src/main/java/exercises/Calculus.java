@@ -1,5 +1,7 @@
 package exercises;
 
+import java.sql.SQLOutput;
+
 import static java.lang.Math.sqrt;
 
 public class Calculus {
@@ -60,16 +62,16 @@ public class Calculus {
 
         double pp = sqrt(p);
         //System.out.println(pp);
-        int kk = (int) Math.ceil(pp)+1;
+        int kk = (int) Math.ceil(pp) + 1;
         int dp;
-       // System.out.println("pierwiatsek zaokraglony w gore to: " + kk);
+        // System.out.println("pierwiatsek zaokraglony w gore to: " + kk);
         boolean primeValue = true;
 
         for (int i = 2; i < kk; i++) {
             dp = p % i;
             if (dp == 0) {
 
-             //   System.out.println(p + " nie jest liczbą pierwszą. bo dzieli się przez: " + i);
+                //   System.out.println(p + " nie jest liczbą pierwszą. bo dzieli się przez: " + i);
                 primeValue = false;
                 break;
             }
@@ -78,9 +80,37 @@ public class Calculus {
         if (primeValue == true) {
             System.out.println(p + " jest to liczba pierwsza");
         }
-return primeValue;
+        return primeValue;
     }
-}
+
+
+    public void isItReallyPrimeNumber(int liczba) {
+        double pierwiastek = Math.sqrt(liczba);
+        double ppp = Math.ceil(pierwiastek);
+        int qqq = (int) ppp;
+        System.out.println(qqq);
+        boolean eee = true;
+
+        for (int i = 2; i < qqq; i++) {
+            int yyy = liczba % i;
+            if (yyy == 0) {
+                System.out.println("nie jest pierwsza");
+                System.out.println("dzieli sie przez " + i);
+                eee = false;
+                break;
+
+            }
+        }
+            if (eee == true) {
+
+            System.out.println("liczba " + liczba + " jest pierwsza");
+            }
+
+
+        }
+
+
+    }
 
 
 

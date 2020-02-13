@@ -1,10 +1,10 @@
 package exercises;
 
-public class FirstClass {
+public class FirstClass extends SecondClass{
 
-
-    public void fcm(){
-        System.out.println("kkk");
+@Override
+    public void metodaFC() {
+        System.out.println("Metoda klasy pierwszej");
     }
 
 

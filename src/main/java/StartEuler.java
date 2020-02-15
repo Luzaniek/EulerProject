@@ -46,16 +46,16 @@ public class StartEuler {
 //        Calculus mmm = new Calculus();
 //        mmm.isItReallyPrimeNumber(77177);
 
-        FirstClass fc = new FirstClass();
-        fc.metodaFC();
-
-
-        SecondClass sc = new SecondClass();
-        sc.metodaFC();
-        System.out.println("teraz");
-
-        sc = new FirstClass();
-        sc.metodaFC();
+        // Polimorfizm
+//        FirstClass fc = new FirstClass();
+//        fc.metodaFC();
+//
+//        SecondClass sc = new SecondClass();
+//        sc.metodaFC();
+//        System.out.println("teraz");
+//
+//        sc = new FirstClass();
+//        sc.metodaFC();
 
 
     }
